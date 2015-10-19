@@ -20,7 +20,7 @@ void drive ()
 	{
 		updateDriveMotors(driveY, driveY);
 	}
-//now for turning!
+//now for turning! very helpful yay
 
 	if (driveX > DEADZONE || driveX < -DEADZONE)
 	{
