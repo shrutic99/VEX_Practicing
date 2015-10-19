@@ -10,7 +10,10 @@ void updateDriveMotors (left,right)
 }
 //this will make it go back and forth! yay life
 //use the void function when you're not making a true or false statemnt or when you're "returning" something
-//
+//you can use abs (absolute value)
+/*
+if (abs(driveY) > DEADZONE)
+*/
 void drive ()
 {
 	if (driveY > DEADZONE || driveY < -DEADZONE)
@@ -21,7 +24,7 @@ void drive ()
 
 	if (driveX > DEADZONE || driveX < -DEADZONE)
 	{
-	updateDriveMotors (driveX, -driveX);
+		updateDriveMotors (driveX, -driveX);
 	}
 	else if
 	{
