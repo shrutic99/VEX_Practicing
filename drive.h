@@ -26,6 +26,20 @@ void drive ()
 	{
 		updateDriveMotors (driveX, -driveX);
 	}
+	if (strafeDrive > DEADZONE)
+	{
+		motor[front_left_drive_motor] = strafeDrive;
+		motor[back_left_drive_motor] = -strafeDrive;
+		motor[front_right_drive_motor] = strafeDrive;
+		motor[back_right_drive_motor] = -strafeDrive;
+	}
+	if (strafeDrive < -DEADZONE)
+	{
+		motor[front_left_drive_motor] = -strafeDrive;
+		motor[back_left_drive_motor] = strafeDrive;
+		motor[front_right_drive_motor] = -strafeDrive;
+		motor[back_right_drive_motor] = strafeDrive;
+	}
 	else if
 	{
 		updateDriveMotors (0,0);
