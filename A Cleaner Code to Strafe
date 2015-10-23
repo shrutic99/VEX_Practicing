@@ -17,12 +17,12 @@ void updateDriveMotors (positive,negative)
   }
 if (abs(strafeDrive) > DEADZONE) 
   {
-    updateDriveMotors (strafeDrive, -strafeDrive)
+    updateDriveMotors (strafeDrive, strafeDrive)
   }
 /*
 if (-strafeDrive < -DEADZONE) 
-*/  
   {
     updateDriveMotors (-strafeDrive, strafeDrive) 
   }
+*/  
   //questions for turning... why don't I need the other way (-driveX, driveX) 
