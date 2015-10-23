@@ -10,7 +10,6 @@ int strafedrive
 int positive
 int negative
 
-//left
 void updateDriveMotors (positive,negative)
   {
     motor[top_right_drive_motor] = positive
@@ -18,7 +17,11 @@ void updateDriveMotors (positive,negative)
     motor[bottom_left_drive_motor] = negative
     motor[bottom_left_drive_motor] = negative
   }
-if (abs(strafeDrive) > DEADZONE) 
+if (strafeDrive) > DEADZONE) 
   {
-    updateDriveMotors (positive, negative)
+    updateDriveMotors (strafeDrive, -strafeDrive)
+  }
+if (-strafeDrive < -DEADZONE) 
+  {
+    updateDriveMotors (-strafeDrive, strafeDrive) 
   }
