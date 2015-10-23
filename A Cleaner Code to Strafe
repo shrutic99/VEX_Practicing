@@ -1,0 +1,24 @@
+
+/*
+if (abs(strafeDrive) > DEADZONE) 
+  {
+    updateDriveMotors (abs(left),abs(right));
+  }
+*/
+
+int strafedrive
+int positive
+int negative
+
+//left
+void updateDriveMotors (positive,negative)
+  {
+    motor[top_right_drive_motor] = positive
+    motor[top_left_drive_motor] = positive
+    motor[bottom_left_drive_motor] = negative
+    motor[bottom_left_drive_motor] = negative
+  }
+if (abs(strafeDrive) > DEADZONE) 
+  {
+    updateDriveMotors (positive, negative)
+  }
