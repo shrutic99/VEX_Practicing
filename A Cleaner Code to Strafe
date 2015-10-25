@@ -15,14 +15,21 @@ void updateDriveMotors (positive,negative)
     motor[bottom_left_drive_motor] = negative
     motor[bottom_left_drive_motor] = negative
   }
-if (abs(strafeDrive) > DEADZONE) 
-  {
-    updateDriveMotors (strafeDrive, strafeDrive)
-  }
+void strafe
+{
+  if (abs(strafeDrive) > DEADZONE) 
+    {
+      updateDriveMotors (strafeDrive, strafeDrive);
+    }
 /*
-if (-strafeDrive < -DEADZONE) 
-  {
-    updateDriveMotors (-strafeDrive, strafeDrive) 
-  }
+  if (-strafeDrive < -DEADZONE) 
+    {
+      updateDriveMotors (-strafeDrive, strafeDrive); 
+    }
 */  
+  if else 
+    {
+      updateriveMotors = (0,0);
+    }
+  }
   //questions for turning... why don't I need the other way (-driveX, driveX) 
