@@ -8,12 +8,12 @@ if (abs(strafeDrive) > DEADZONE)
 
 int strafedrive
 
-void updateDriveMotors (positive,negative)
+void updateDriveMotors (positive, negative)
   {
-    motor[top_right_drive_motor] = positive
-    motor[top_left_drive_motor] = positive
-    motor[bottom_left_drive_motor] = negative
-    motor[bottom_left_drive_motor] = negative
+    motor[top_right_drive_motor] = positive;
+    motor[top_left_drive_motor] = positive;
+    motor[bottom_left_drive_motor] = negative;
+    motor[bottom_right_drive_motor] = negative;
   }
 void strafe
 {
@@ -29,7 +29,7 @@ void strafe
 */  
   if else 
     {
-      updateriveMotors = (0,0);
+      updateDriveMotors = (0,0);
     }
   }
   //questions for turning... why don't I need the other way (-driveX, driveX) 
