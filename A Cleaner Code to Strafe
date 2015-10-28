@@ -11,10 +11,11 @@ int strafedrive
 void updateDriveMotors (positive, negative)
   {
     motor[top_right_drive_motor] = positive;
-    motor[top_left_drive_motor] = positive;
-    motor[bottom_left_drive_motor] = negative;
+    motor[top_left_drive_motor] = negative;
+    motor[bottom_left_drive_motor] = positive;
     motor[bottom_right_drive_motor] = negative;
   }
+  //the opposites are going to be positive; dont think in terms of the motors. 
 void strafe
 {
   if (abs(strafeDrive) > DEADZONE) 
